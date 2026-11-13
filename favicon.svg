@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Tinkerfolk: a little house (folk: home, neighbours) whose round window is a gear (tinker). -->
+  <rect x="41" y="10" width="7" height="14" rx="1.5" fill="#c9443f"/>
+  <path d="M8 31 L32 10 L56 31" fill="#ef5b5b" stroke="#ef5b5b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="13" y="29" width="38" height="27" rx="5" fill="#f6cf45"/>
+  <g transform="translate(32 42)" fill="#2a2c3f">
+    <circle r="7.4"/>
+    <rect x="-2" y="-10.2" width="4" height="4.6" rx="1"/>
+    <rect x="-2" y="-10.2" width="4" height="4.6" rx="1" transform="rotate(45)"/>
+    <rect x="-2" y="-10.2" width="4" height="4.6" rx="1" transform="rotate(90)"/>
+    <rect x="-2" y="-10.2" width="4" height="4.6" rx="1" transform="rotate(135)"/>
+    <rect x="-2" y="-10.2" width="4" height="4.6" rx="1" transform="rotate(180)"/>
+    <rect x="-2" y="-10.2" width="4" height="4.6" rx="1" transform="rotate(225)"/>
+    <rect x="-2" y="-10.2" width="4" height="4.6" rx="1" transform="rotate(270)"/>
+    <rect x="-2" y="-10.2" width="4" height="4.6" rx="1" transform="rotate(315)"/>
+    <circle r="2.8" fill="#8ccff0"/>
+  </g>
+</svg>

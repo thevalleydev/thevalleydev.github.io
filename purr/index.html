@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#fbf0dc" />
+    <meta name="description" content="Fix up an old house room by room, and settle the strays who live there." />
+    <link rel="icon" href="./logo.svg" type="image/svg+xml" />
+    <title>Purr &amp; Repair</title>
+    <script type="module" crossorigin src="./assets/index-BlRfD8zb.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C5ndzTNl.css">
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Purr &amp; Repair" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <script>if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));</script>
+  </head>
+  <body>
+    <div id="app">
+      <section id="story" hidden>
+        <div id="story-art"></div>
+        <p id="story-text" aria-live="polite"></p>
+        <div id="story-dots" aria-hidden="true"></div>
+        <button id="btn-story-next" class="big primary">Next</button>
+        <button id="btn-story-skip" class="link">Skip</button>
+      </section>
+
+      <section id="home" hidden>
+        <header class="home-head">
+          <img class="logo" src="./logo.svg" alt="" width="56" height="56" />
+          <div>
+            <h1>Purr &amp; Repair</h1>
+            <p class="tag">Fix up the old house. The strays will make themselves at home.</p>
+          </div>
+        </header>
+        <div id="house"></div>
+        <p id="home-note"></p>
+        <button id="btn-next" class="big primary"></button>
+        <div class="home-foot">
+          <label class="toggle">Sound <input type="checkbox" id="opt-sound" /><span class="switch"></span></label>
+          <button id="btn-story" class="link">How it started</button>
+          <p id="studio"></p>
+        </div>
+      </section>
+
+      <section id="play" hidden>
+        <header id="bar">
+          <button id="btn-home" class="icon" aria-label="Back to the house">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 L12 3 L21 11 M6 9 V20 H18 V9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="titles">
+            <div id="room-title"></div>
+            <div id="room-sub"></div>
+          </div>
+          <button id="btn-undo" class="icon" aria-label="Undo a move">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14 L4 9 L9 4 M4 9 H14 A6 6 0 0 1 14 21 H9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button id="btn-restart" class="icon" aria-label="Start the room over">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12 A8 8 0 1 1 17.7 6.3 M20 4 V8 H16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </header>
+        <div id="hud"><span id="hud-moves"></span><span id="hud-tools"></span><span id="hud-par"></span></div>
+        <div id="goals"></div>
+        <div id="board" role="application" aria-label="The room. Swipe, tap or use the arrow keys to move."></div>
+        <p id="hint" aria-live="polite"></p>
+      </section>
+
+      <section id="job" hidden>
+        <div class="job-card">
+          <header class="job-head">
+            <div>
+              <h2 id="job-title"></h2>
+              <p id="job-goal"></p>
+            </div>
+            <button id="btn-job-close" class="icon" aria-label="Leave it for now">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+            </button>
+          </header>
+          <div id="job-hud"><span id="job-turns"></span><span id="job-par"></span></div>
+          <div id="job-board"></div>
+        </div>
+      </section>
+
+      <section id="panel" hidden>
+        <div class="card">
+          <h2 id="panel-title"></h2>
+          <div id="panel-body"></div>
+          <div id="panel-buttons"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

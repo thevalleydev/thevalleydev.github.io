@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#fff3fa" />
+    <meta name="description" content="Three kitty superheroes sort out the trouble a dinosaur, a monkey and a tiger have been up to." />
+    <link rel="icon" href="./logo.svg" type="image/svg+xml" />
+    <title>Kitty Pouncers</title>
+    <script type="module" crossorigin src="./assets/index-CH2DZHWc.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BBWQAxRG.css">
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Kitty Pouncers" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <script>if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));</script>
+  </head>
+  <body>
+    <div id="app">
+      <section id="home" hidden>
+        <img class="logo" src="./logo.svg" alt="" width="88" height="88" />
+        <h1>Kitty Pouncers</h1>
+        <div id="team"></div>
+        <button id="btn-play" class="big primary">Play!</button>
+        <div class="toggles">
+          <label class="toggle">Read to me <input type="checkbox" id="opt-voice" /><span class="switch"></span></label>
+          <label class="toggle">Sound <input type="checkbox" id="opt-sound" /><span class="switch"></span></label>
+        </div>
+        <button id="btn-grownups" class="link">For grown-ups</button>
+      </section>
+
+      <section id="map" hidden>
+        <header class="bar">
+          <button id="btn-map-home" class="icon" aria-label="Back">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <h2>Kitty Town</h2>
+          <span class="spacer"></span>
+        </header>
+        <div id="world"></div>
+      </section>
+
+      <section id="levels" hidden>
+        <header class="bar">
+          <button id="btn-levels-map" class="icon" aria-label="Back to the map">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <h2 id="area-title"></h2>
+          <span class="spacer"></span>
+        </header>
+        <div id="trail"></div>
+      </section>
+
+      <section id="play" hidden>
+        <header class="bar">
+          <button id="btn-back" class="icon" aria-label="Back to the missions">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <h2 id="level-title"></h2>
+          <button id="btn-undo" class="icon" aria-label="Undo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14 L4 9 L9 4 M4 9 H14 A6 6 0 0 1 14 21 H9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button id="btn-restart" class="icon" aria-label="Start again">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12 A8 8 0 1 1 17.7 6.3 M20 4 V8 H16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </header>
+        <div id="story">
+          <p id="story-text" aria-live="polite"></p>
+          <button id="btn-hint" class="icon hint" aria-label="Hint">💡</button>
+          <button id="btn-read" class="icon read" aria-label="Read it to me">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9 H8 L13 5 V19 L8 15 H4 Z" fill="currentColor"/><path d="M16 9 Q18 12 16 15 M18.5 7 Q22 12 18.5 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div id="status">
+          <div id="goals" aria-label="Who to catch"></div>
+          <div id="paws" aria-label="Paws left"></div>
+        </div>
+        <div id="board-wrap"><div id="board"></div></div>
+        <div id="hero-bar"></div>
+      </section>
+
+      <div id="coach-hand" hidden aria-hidden="true">👆</div>
+
+      <section id="panel" hidden>
+        <div class="card">
+          <h2 id="panel-title"></h2>
+          <div id="panel-body"></div>
+          <div id="panel-buttons"></div>
+        </div>
+      </section>
+
+      <section id="gate" hidden>
+        <div class="card">
+          <h2>For grown-ups</h2>
+          <p id="gate-question"></p>
+          <div id="gate-answers"></div>
+          <div id="gate-open" hidden></div>
+          <button id="btn-gate-close" class="big">Back to the game</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

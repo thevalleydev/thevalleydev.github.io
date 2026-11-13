@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#fff4dc" />
+    <meta name="description" content="Tap the chicks out of the grid. Three of a colour fly home together. A new puzzle every day." />
+    <title>Chirpout: a daily chick puzzle</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="./assets/index-IDaLjYB5.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CYpJweS8.css">
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Chirpout" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <script>if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));</script>
+  </head>
+  <body>
+    <div id="app">
+      <header id="bar" hidden>
+        <button id="btn-home" class="icon" aria-label="Menu">
+          <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" /></svg>
+        </button>
+        <div id="title"><span id="mode-label"></span><span id="sub-label"></span></div>
+        <button id="btn-undo" class="icon" aria-label="Undo (Z)">
+          <svg viewBox="0 0 24 24"><path d="M9 7H5V3" /><path d="M5.5 7.5A8 8 0 1 1 4 13" /></svg>
+        </button>
+        <button id="btn-restart" class="icon" aria-label="Restart (R)">
+          <svg viewBox="0 0 24 24"><path d="M20 4v5h-5" /><path d="M19.5 9A8 8 0 1 0 20 13" /></svg>
+        </button>
+      </header>
+      <p id="hint" hidden></p>
+      <main id="stage"><canvas id="board"></canvas></main>
+
+      <section id="home" hidden>
+        <canvas id="logo" width="120" height="120"></canvas>
+        <h1>Chirpout</h1>
+        <p class="tag">Tap the chicks out. Three of a colour fly home.</p>
+        <button id="btn-daily" class="big primary">
+          <span class="t">Daily <b id="daily-num"></b></span><span class="s" id="daily-sub"></span>
+        </button>
+        <button id="btn-share-home" class="link" hidden>Share today's result</button>
+        <button id="btn-journey" class="big"><span class="t">Journey</span><span class="s" id="journey-sub"></span></button>
+        <div class="toggles">
+          <label class="toggle"><span data-icon="leaf"></span>Calm<input type="checkbox" id="opt-calm" /><span class="switch"></span></label>
+          <label class="toggle"><span data-icon="sound"></span>Sound<input type="checkbox" id="opt-sound" /><span class="switch"></span></label>
+        </div>
+        <p id="streak"></p>
+        <p id="studio"></p>
+      </section>
+
+      <section id="panel" hidden>
+        <div class="card">
+          <h2 id="panel-title"></h2>
+          <div id="panel-body"></div>
+          <div id="panel-buttons"></div>
+        </div>
+      </section>
+      <div id="toast" hidden></div>
+    </div>
+  </body>
+</html>
