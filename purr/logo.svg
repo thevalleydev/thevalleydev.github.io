@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Purr & Repair: a tabby in front of a wrench, on a warm tile. -->
+  <rect width="64" height="64" rx="14" fill="#fbf0dc"/>
+  <g transform="rotate(-45 32 32)" stroke="#5b636c" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="-1" y="28.5" width="50" height="7" rx="3.5" fill="#9aa3ad"/>
+    <path d="M59.1 26.5 A9 9 0 1 0 59.1 37.5 L54.2 34.8 V29.2 Z" fill="#9aa3ad"/>
+  </g>
+  <path d="M16 30 L14 13 L27 22 Z M48 30 L50 13 L37 22 Z" fill="#f2a65a" stroke="#c66f2b" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M18 26 L17 17 L24 22 Z M46 26 L47 17 L40 22 Z" fill="#fde2c2"/>
+  <ellipse cx="32" cy="37" rx="18" ry="15" fill="#f2a65a" stroke="#c66f2b" stroke-width="2.5"/>
+  <path d="M27.5 23 l1.8 5 M32 22 v5 M36.5 23 l-1.8 5" stroke="#c66f2b" stroke-width="2.3" stroke-linecap="round"/>
+  <ellipse cx="32" cy="43" rx="8.5" ry="6" fill="#fde2c2"/>
+  <circle cx="25" cy="35" r="2.9" fill="#2a2230"/>
+  <circle cx="39" cy="35" r="2.9" fill="#2a2230"/>
+  <circle cx="24.1" cy="34" r="0.95" fill="#fff"/>
+  <circle cx="38.1" cy="34" r="0.95" fill="#fff"/>
+  <path d="M30 40 h4 l-2 2.4 Z" fill="#e77a8a"/>
+  <path d="M32 42.4 q-2.4 2.8 -4.8 1 M32 42.4 q2.4 2.8 4.8 1" fill="none" stroke="#c66f2b" stroke-width="1.7" stroke-linecap="round"/>
+</svg>

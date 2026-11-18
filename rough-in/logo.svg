@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Rough-In: a pipe tee with a brass fitting, and a drop at the open end. -->
+  <rect width="64" height="64" rx="14" fill="#fbf0dc"/>
+  <path d="M9 24 H55 M32 24 V44" fill="none" stroke="#8a7466" stroke-width="15" stroke-linecap="round"/>
+  <path d="M9 24 H55 M32 24 V44" fill="none" stroke="#4aa3df" stroke-width="8.5" stroke-linecap="round"/>
+  <rect x="22" y="14" width="20" height="20" rx="5" fill="#f2b134" stroke="#8a7466" stroke-width="3"/>
+  <circle cx="32" cy="24" r="4" fill="#c98a1c"/>
+  <path d="M32 49 C36 54 38 57 38 59.5 A6 6 0 0 1 26 59.5 C26 57 28 54 32 49 Z" fill="#4aa3df" stroke="#3a7fb0" stroke-width="2"/>
+</svg>
