@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d0f14">
+  <title>Not My Phone</title>
+  <link rel="stylesheet" href="css/phone.css">
+  <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Not My Phone" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <script>if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));</script>
+  </head>
+<body>
+  <main class="stage">
+    <div class="phone">
+      <div class="island" aria-hidden="true"></div>
+      <div class="screen" id="screen"><p class="loading">Picking up the phone…</p></div>
+      <div class="banner" id="banner"></div>
+      <div id="sheet"></div>
+    </div>
+    <aside class="meta" id="meta"></aside>
+  </main>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="js/engine.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/data/cities/pittsburgh.js"></script>
+  <script src="js/data/cities/cincinnati.js"></script>
+  <script src="js/data/cities/detroit.js"></script>
+  <script src="js/data/cases/turnpike-trivia.js"></script>
+  <script src="js/data/cases/plan-c.js"></script>
+  <script src="js/data/cases/overtime-dog.js"></script>
+  <script src="js/data/season.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
